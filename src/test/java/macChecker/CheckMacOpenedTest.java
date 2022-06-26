@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class CheckMacOpenedTest {
 
     @BeforeAll
-    public static void beforeAll() {
+    static void beforeAll() {
         Configuration.baseUrl = "https://gogov.ru";
         Configuration.remote = "http://webprizma.ru:49175/wd/hub/";
         Configuration.browser = "chrome";
