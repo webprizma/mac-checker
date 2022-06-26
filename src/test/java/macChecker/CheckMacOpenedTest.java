@@ -15,15 +15,11 @@ public class CheckMacOpenedTest {
 
     @BeforeAll
     static void beforeAll() {
-//        Configuration.baseUrl = "https://gogov.ru";
         Configuration.remote = "http://webprizma.ru:49175/wd/hub/";
-//        Configuration.browser = "chrome";
-//        Configuration.browserVersion = "101";
-//        Configuration.browserSize = "1920x1080";
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
-        Configuration.browserCapabilities = capabilities;
+//        DesiredCapabilities capabilities = new DesiredCapabilities();
+//        capabilities.setCapability("enableVNC", true);
+//        capabilities.setCapability("enableVideo", true);
+//        Configuration.browserCapabilities = capabilities;
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
