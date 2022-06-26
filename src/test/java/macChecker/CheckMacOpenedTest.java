@@ -16,7 +16,7 @@ public class CheckMacOpenedTest {
     @BeforeAll
     public static void beforeAll() {
         Configuration.baseUrl = "https://gogov.ru";
-        Configuration.remote = "http://webprizma.ru:49175/wd/hub";
+        Configuration.remote = "http://webprizma.ru:49175/wd/hub/";
         Configuration.browser = "chrome";
         Configuration.browserVersion = "102";
         Configuration.browserSize = "1920x1080";
