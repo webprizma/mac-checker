@@ -15,11 +15,11 @@ public class CheckMacOpenedTest {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.baseUrl = "https://gogov.ru";
+//        Configuration.baseUrl = "https://gogov.ru";
         Configuration.remote = "http://webprizma.ru:49175/wd/hub/";
-        Configuration.browser = "chrome";
-        Configuration.browserVersion = "101";
-        Configuration.browserSize = "1920x1080";
+//        Configuration.browser = "chrome";
+//        Configuration.browserVersion = "101";
+//        Configuration.browserSize = "1920x1080";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
@@ -29,7 +29,7 @@ public class CheckMacOpenedTest {
 
     @Test
     void checkMacOpened() {
-        open("/vkusno-i-tochka/krasnodar");
+        open("http://gogov.ru/vkusno-i-tochka/krasnodar");
         $$("div.gu-data h3").first().shouldHave(Condition.text("Рестораны в Краснодаре"));
         $$("tr")
                 .findBy(Condition.text("Краснодарский край, г. Краснодар, ул. им. Артюшкова В.Д., д. 2"))
