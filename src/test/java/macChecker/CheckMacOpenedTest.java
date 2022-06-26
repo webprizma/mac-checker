@@ -14,7 +14,8 @@ public class CheckMacOpenedTest {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.remote = "http://webprizma.ru:49175/wd/hub";
+//        Configuration.remote = "http://webprizma.ru:49175/wd/hub";
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         Configuration.browser = "chrome";
         Configuration.browserVersion = "102";
         SelenideLogger.addListener("allure", new AllureSelenide());
