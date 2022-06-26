@@ -16,11 +16,11 @@ public class CheckMacOpenedTest {
     @BeforeAll
     static void beforeAll() {
         Configuration.remote = "http://webprizma.ru:49175/wd/hub/";
+        SelenideLogger.addListener("allure", new AllureSelenide());
 //        DesiredCapabilities capabilities = new DesiredCapabilities();
 //        capabilities.setCapability("enableVNC", true);
 //        capabilities.setCapability("enableVideo", true);
 //        Configuration.browserCapabilities = capabilities;
-        SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
     @Test
