@@ -23,6 +23,6 @@ public class CheckMacOpenedTest {
         Selenide.open("https://gogov.ru/vkusno-i-tochka/krasnodar");
         $$("tr")
                 .findBy(Condition.text("Краснодарский край, г. Краснодар, ул. им. Артюшкова В.Д., д. 2"))
-                .scrollTo().shouldHave(Condition.text("открыт"));
+                .shouldHave(Condition.text("закрыт"));
     }
 }
