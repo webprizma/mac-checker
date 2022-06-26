@@ -12,24 +12,25 @@ repositories {
 
 allure {
     report {
-        version.set("2.18.1") //версия Allure Report (https://github.com/allure-framework/allure2)
+        version.set("2.17.3") //версия Allure Report (https://github.com/allure-framework/allure2)
     }
     adapter {
         aspectjWeaver.set(true) // обработка аннотации @Step
         frameworks {
             junit5 {
-                adapterVersion.set("2.18.1") //версия Allure JUnit5 (https://github.com/allure-framework/allure-java)
+                adapterVersion.set("2.17.3") //версия Allure JUnit5 (https://github.com/allure-framework/allure-java)
             }
         }
     }
 }
 
+
 dependencies {
     testImplementation (
             'org.junit.jupiter:junit-jupiter:5.8.2',
-            'com.codeborne:selenide:6.6.5',
-            'io.qameta.allure:allure-selenide:2.18.1',
-            'org.slf4j:slf4j-simple:1.8.0-beta4'
+            'com.codeborne:selenide:6.6.3',
+            'io.qameta.allure:allure-selenide:2.17.3',
+            'org.slf4j:slf4j-simple:1.7.36'
     )
 }
 
